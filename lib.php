@@ -37,10 +37,11 @@ class tinymce_html_components extends editor_tinymce_plugin {
         $this->add_js_plugin($params);
     }
 
-     /**
+    /**
      * Function to return the possible <option> for a background.
-     * @param $component
-    */
+     * @param $component the component name.
+     * @return string the html code to insert.
+     */
     public static function get_types_background($component) {
         $str = "";
         if (!in_array($component, array("card", "alert", "button"))) {
