@@ -35,6 +35,7 @@ Le plugin permet pour l'instant d'insérer facilement les composants html/bootst
 - Jumbotron
 - Menu de navigation
 - Vignette
+<p>Attention, pour éditer le visuel de certains composants vous serez obligé de modifier le code source html depuis l'éditeur.</p>
 
 Pistes d'améliorations
 -----
@@ -44,6 +45,7 @@ Pistes d'améliorations
 - Personnalisation en relation avec le thème utilisé (utilisation variable $primary par exemple).  
 - Utilisation de Bootstrap 5.
 - Optimiser le code.
+<p>Ceci est la première version du plugin donc n'hésitez pas à proposer des améliorations et/ou des développements/pull pour enrichir le plugin.</p>  </p>
 
 A propos
 ------

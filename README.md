@@ -35,6 +35,7 @@ For now this plugin allows you to easily add these html/bootstrap components:
 - Jumbotron
 - Navigation menu
 - Card
+<p>Be careful, for some component you will have to edit to edit html source code in editor to change display.</p>
 
 Possible improvements
 -----
@@ -44,6 +45,7 @@ Possible improvements
 - Personalization linked to the theme used (use the primary variable css $ for example).
 - Using Bootstrap 5.
 - Code optimization.
+<p>This is a first version of the plugin so feel free to propose some improvements and/or developments/pull requests to improve this plugin.</p>  
 
 Abous us
 ------
