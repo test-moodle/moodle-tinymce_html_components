@@ -47,6 +47,7 @@ header('X-UA-Compatible: IE=edge');
     <link rel="stylesheet" type="text/css" href="<?php echo new moodle_url('/lib/editor/tinymce/plugins/html_components/styles.css'); ?>">
     <script type="text/javascript" src="<?php echo $editor->get_tinymce_base_url(); ?>/tiny_mce_popup.js"></script>
     <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/dialog.js'); ?>"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script><!-- script to generate base64 image for card component -->
 </head>
 <body >
 <style>

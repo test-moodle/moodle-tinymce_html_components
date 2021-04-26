@@ -30,7 +30,8 @@ var HtmlComponentsCard = {
         var div_class = (nb_cards <= 1) ? "col-3" : "col-" + Math.round(12/card_disposition);
         var card_class = (card_background == "image" || card_background == "classic") ? "" : "text-white bg-" + card_background;
         var btn_class = (card_background == "image" || card_background == "secondary" || card_background == "classic") ? "primary" : "light";
-        var background = (card_background == "image") ? "<img src='https://cdn.uca.fr/images/ent/background_ent_2.jpg' class='card-img-top img-fluid' alt=''>" : "<div class='card-header'>CARD HEADER</div>" ;
+        var img_pattern = GeoPattern.generate(Math.random().toString(16).substr(2, 10));
+        var background = (card_background == "image") ? "<img src='" + img_pattern.toDataUri() + "' class='card-img-top img-fluid' alt='' style='max-height: 220px;'>" : "<div class='card-header'>CARD HEADER</div>" ;
 
         if (card_orientation == "portrait") {
             var card_html = (card_display == "horizontal") ? "<div class='" + div_class +"' style='margin-bottom: 20px;'>" : "";
@@ -47,7 +48,7 @@ var HtmlComponentsCard = {
             var div_class = (nb_cards <= 1) ? "col-4" : "col-" + Math.round(12/card_disposition);
             var card_html = "<div class='" + div_class + "' style='padding-left: initial; margin-bottom: 20px;'>";
             card_html += "<div class='card shadow-lg h-100'><div class='row no-gutters'>" +
-                    "<div class='col-4'><img src='https://cdn.uca.fr/images/ent/photo_user_anonymous.png' class='card-img img-fluid' /></div>" +
+                    "<div class='col-4'><img src='" + img_pattern.toDataUri() + "' class='card-img img-fluid' /></div>" +
                     "<div class='col-8'>" +
                         "<div class='card-body'>" +
                         "<h5 class='card-title'>Card title</h5>" +
