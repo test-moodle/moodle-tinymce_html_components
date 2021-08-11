@@ -62,4 +62,35 @@ class tinymce_html_components extends editor_tinymce_plugin {
 
         return $str;
     }
+
+    /**
+     * Function to return all the available components as <option>.
+     * We check here if the current user has own custom components to list or to use.
+     * @return string
+     * @throws coding_exception
+     */
+    public static function getAvailableComponents($user)
+    {
+        global $DB;
+        $str = '<option value="">' . get_string('component_placeholder', 'tinymce_html_components') . '</option>
+            <optgroup label="' . get_string('basic_components', 'tinymce_html_components') .'">
+                <option value="Accordion">' . get_string('accordion', 'tinymce_html_components') .'</option>
+                <option value="Alert">' . get_string('alert', 'tinymce_html_components') . '</option>
+                <option value="Button">' . get_string('button', 'tinymce_html_components') . '</option>
+                <option value="Card">' . get_string('card', 'tinymce_html_components') . '</option>
+                <option value="Jumbotron">' . get_string('jumbotron', 'tinymce_html_components') . '</option>
+                <option value="NavLinks">' . get_string('nav', 'tinymce_html_components') . '</option>
+            </optgroup>';
+
+        $customs = $DB->get_records('tinymce_components_custom', array('userid' => $user->id), 'name ASC');
+        if ($customs) {
+            $str .= '<optgroup label="' . get_string('custom_components', 'tinymce_html_components') .'">';
+            foreach ($customs as $custom) {
+                $str .= '<option value="Custom" custom-component="' . $custom->code . '" custom-component-content="' . htmlspecialchars($custom->content) . '">' . $custom->name . '</option>';
+            }
+            $str .= "</optgroup>";
+        }
+
+        return $str;
+    }
 }

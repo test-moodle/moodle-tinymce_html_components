@@ -10,7 +10,7 @@ Ces composants (principalement présent dans Bootstrap) seront ajoutés via l'é
 Pré-requis
 ------------
 - Moodle en version 3.7 ou plus récente.
--> Tests effectués sur des versions 3.7 à 3.10.3 (tests sur des versions précédentes par encore effectués).
+-> Tests effectués sur des versions 3.7 à 3.11.0(tests sur des versions précédentes par encore effectués).
 - Utilisation du thème Boost ou d'un thème qui étend le thème Boost (qui utilise bootstrap).
 
 Installation
@@ -21,7 +21,7 @@ Installation
 > git clone https://github.com/andurif/moodle-tinymce_html_components.git lib/editor/tinymce/plugins/html_components
 
 - Téléchargement:
-> Télécharger le zip depuis https://github.com/andurif//moodle-tinymce_html_components/archive/master.zip, dézipper l'archive dans le dossier lib/editor/tinymce/plugins/ et renommer le si besoin le dossier en "html_components" ou installez-le depuis la page d'installation des plugins si vous possédeez les bons droits..
+> Télécharger le zip depuis <a href="https://github.com/andurif/moodle-tinymce_html_components/archive/refs/heads/main.zip" target="_blank" >https://github.com/andurif/moodle-tinymce_html_components/archive/refs/heads/main.zip </a>, dézipper l'archive dans le dossier lib/editor/tinymce/plugins/ et renommer le si besoin le dossier en "html_components" ou installez-le depuis la page d'installation des plugins si vous possédeez les bons droits..
 
 2. Aller sur la page de notifications pour finaliser l'installation du plugin.
 
@@ -35,12 +35,15 @@ Le plugin permet pour l'instant d'insérer facilement les composants html/bootst
 - Jumbotron
 - Menu de navigation
 - Vignette
-<p>Attention, pour éditer le visuel de certains composants vous serez obligé de modifier le code source html depuis l'éditeur.</p>
+<p>Attention, pour éditer le visuel de certains composants vous serez obligé de modifier le code source html depuis l'éditeur
+(L'élément accordéon par exemple pour mdofier le contenu ou la valeur des attributs id pour éviter les conflits si vous utilisez plusieurs accordéons dans la même page).</p>
+
+Dans la dernière version du plugin, une première intégration d'éléments personnalisés a été développé.<br/>
+Cette intégration permet à un utilisateur de créer ses propres composants, de les enregistrer et de les réutiliser plus tard via ce plugin.
 
 Pistes d'améliorations
 -----
 - Intégrer d'autres composants, ex: icônes, timeline, carousel, breadcrump... (certains ajouts sont en cours de développement)
-- Intégrer des éléments personnalisé, plus complexes et propre à l'utilisateur.
 - Intégrer davantage d'options pour faciliter les ajouts par les enseignants. 
 - Personnalisation en relation avec le thème utilisé (utilisation variable $primary par exemple).  
 - Utilisation de Bootstrap 5.

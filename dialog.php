@@ -34,6 +34,8 @@ $stringmanager = get_string_manager();
 $editor = get_texteditor('tinymce');
 $plugin = $editor->get_plugin('html_components');
 $htmllang = get_html_lang();
+$session = $DB->get_record('sessions', array('sid' => $_COOKIE["MoodleSession"]));
+$currentuser = ($session) ? $DB->get_record('user', array('id' => $session->userid)) : null;
 
 header('Content-Type: text/html; charset=utf-8');
 header('X-UA-Compatible: IE=edge');
@@ -67,15 +69,9 @@ header('X-UA-Compatible: IE=edge');
                     <?php print_string('component', 'tinymce_html_components'); ?>
                 </label>
                 <div class="col-sm-9">
-                    <select id="component" name="component" class="form-control" onchange="HtmlComponentsDialog.change();">
-                        <!-- Components list, alphabetic sort -->
-                        <option value=""><?php print_string('component_placeholder', 'tinymce_html_components'); ?></option>
-                        <option value="Accordion"><?php print_string('accordion', 'tinymce_html_components'); ?></option>
-                        <option value="Alert"><?php print_string('alert', 'tinymce_html_components'); ?></option>
-                        <option value="Button"><?php print_string('button', 'tinymce_html_components'); ?></option>
-                        <option value="Card"><?php print_string('card', 'tinymce_html_components'); ?></option>
-                        <option value="Jumbotron"><?php print_string('jumbotron', 'tinymce_html_components'); ?></option>
-                        <option value="NavLinks"><?php print_string('nav', 'tinymce_html_components'); ?></option>
+                    <select id="component" name="component" class="form-control" onchange="UCAComponentsDialog.change();">
+                        <!-- Components list, alphabetic sort (in french) -->
+                        <?php echo tinymce_html_components::getAvailableComponents($currentuser); ?>
                     </select>
                 </div>
             </div>
@@ -167,12 +163,12 @@ header('X-UA-Compatible: IE=edge');
                         </div>
                     </div>
                 </div>
-                <div class="form-group row" id="nb_cards_form-group">
-                    <label for="nb_cards" class="col-sm-3 col-form-label">
+                <div class="form-group row" id="card_nb_form-group">
+                    <label for="card_nb" class="col-sm-3 col-form-label">
                         <?php print_string('card_nb', 'tinymce_html_components'); ?>
                     </label>
                     <div class="col-sm-9">
-                        <input id="nb_cards" name="nb_cards" type="number" min="1" value="1" size="30"
+                        <input id="card_nb" name="card_nb" type="number" min="1" value="1" size="30"
                                class="form-control" onchange="HtmlComponentsDialog.change();" />
                     </div>
                 </div>
@@ -233,7 +229,7 @@ header('X-UA-Compatible: IE=edge');
             </div>
 
             <!-- Button -->
-            <div id="button-fields" hidden>
+            <div id="button_fields" hidden>
                 <div class="form-group row" id="button_nb_form-group">
                     <label for="button_nb" class="col-sm-3 col-form-label">
                         <?php print_string('button_nb', 'tinymce_html_components'); ?>
@@ -353,6 +349,13 @@ header('X-UA-Compatible: IE=edge');
                     </div>
                 </div>
             </div>
+
+            <p style="text-align: right;">
+                <a href="<?php $customurl = new moodle_url('/lib/editor/tinymce/plugins/html_components/custom_components.php');
+                    echo $customurl->out(); ?>" target="_blank">
+                        <?php print_string('custom_components_link', 'tinymce_html_components'); ?>
+                </a>
+            </p>
 
         </fieldset>
         <fieldset>

@@ -11,10 +11,9 @@ var HtmlComponentsAlert = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = false;
-        document.getElementById('nb_cards_form-group').hidden = true;
         document.getElementById('card_fields').hidden = true;
         document.getElementById('collapse_fields').hidden = true;
-        document.getElementById('button-fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 };
@@ -22,7 +21,7 @@ var HtmlComponentsAlert = {
 /** var corresponding to a card component */
 var HtmlComponentsCard = {
     insert : function () {
-        var nb_cards = document.getElementById('nb_cards').value;
+        var nb_cards = document.getElementById('card_nb').value;
         var card_background = document.getElementById('card_background').value;
         var card_display = document.querySelector('input[name="card_display"]:checked').value;
         var card_orientation = (card_background != "image") ? "portrait" : document.querySelector('input[name="card_orientation"]:checked').value;
@@ -76,8 +75,10 @@ var HtmlComponentsCard = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = true;
-        document.getElementById('nb_cards_form-group').hidden = false;
+        document.getElementById('card_nb_form-group').hidden = false;
         document.getElementById('card_fields').hidden = false;
+        document.getElementById('card_background_form-group').hidden = false;
+        document.getElementById('card_display_form-group').hidden = false;
         document.getElementById('card_orientation_form-group').hidden = (document.getElementById('card_background').value != "image");
         if (document.querySelector('input[name="card_display"]:checked').value != "horizontal") {
             document.getElementById('card_disposition_form-group').hidden = true;
@@ -86,7 +87,7 @@ var HtmlComponentsCard = {
         }
         document.getElementById('collapse_fields').hidden = true;
         document.getElementById('nav_nb_form-group').hidden = true;
-        document.getElementById('button-fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 
@@ -122,10 +123,10 @@ var HtmlComponentsJumbotron = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = true;
-        document.getElementById('nb_cards_form-group').hidden = true;
         document.getElementById('card_fields').hidden = true;
+        document.getElementById('collapse_fields').hidden = true;
         document.getElementById('nav_nb_form-group').hidden = true;
-        document.getElementById('button-fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 }
@@ -165,11 +166,10 @@ var HtmlComponentsAccordion = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = true;
-        document.getElementById('nb_cards_form-group').hidden = true;
         document.getElementById('card_fields').hidden = true;
         document.getElementById('collapse_fields').hidden = false;
         document.getElementById('nav_nb_form-group').hidden = true;
-        document.getElementById('button-fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 }
@@ -197,11 +197,10 @@ var HtmlComponentsNavLinks = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = true;
-        document.getElementById('nb_cards_form-group').hidden = true;
         document.getElementById('card_fields').hidden = true;
         document.getElementById('collapse_fields').hidden = true;
         document.getElementById('nav_nb_form-group').hidden = false;
-        document.getElementById('button-fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 }
@@ -235,14 +234,33 @@ var HtmlComponentsButton = {
 
     display : function () {
         document.getElementById('alert_fields').hidden = true;
-        document.getElementById('nb_cards_form-group').hidden = true;
         document.getElementById('card_fields').hidden = true;
         document.getElementById('collapse_fields').hidden = true;
         document.getElementById('nav_nb_form-group').hidden = true;
-        document.getElementById('button-fields').hidden = false;
+        document.getElementById('button_fields').hidden = false;
         document.getElementById('button_tooltip_pos_form-group').hidden = (document.querySelector('input[name="button_tooltip"]:checked').value == "0");
     },
 }
+
+/** var corresponding to a custom component */
+var HtmlComponentsCustom = {
+    insert : function() {
+        // Returns the given html code as attribute for this component.
+        return document.querySelector('option:checked').getAttribute('custom-component-content');
+    },
+
+    preview : function() {
+        return this.insert();
+    },
+
+    display : function () {
+        document.getElementById('alert_fields').hidden = true;
+        document.getElementById('card_fields').hidden = true;
+        document.getElementById('collapse_fields').hidden = true;
+        document.getElementById('button_fields').hidden = true;
+        document.getElementById('button_tooltip_pos_form-group').hidden = true;
+    },
+};
 
 /** var corresponding to the principal object with functions used globally in the plugin. */
 var HtmlComponentsDialog = {
