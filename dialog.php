@@ -69,7 +69,7 @@ header('X-UA-Compatible: IE=edge');
                     <?php print_string('component', 'tinymce_html_components'); ?>
                 </label>
                 <div class="col-sm-9">
-                    <select id="component" name="component" class="form-control" onchange="UCAComponentsDialog.change();">
+                    <select id="component" name="component" class="form-control" onchange="HtmlComponentsDialog.change();">
                         <!-- Components list, alphabetic sort (in french) -->
                         <?php echo tinymce_html_components::getAvailableComponents($currentuser); ?>
                     </select>
