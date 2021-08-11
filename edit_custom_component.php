@@ -33,7 +33,7 @@ if ($id) {
 
 echo $OUTPUT->header();
 
-echo html_writer::tag('h2', get_string('custom_components_edit', 'tinymce_uca_components'));
+echo html_writer::tag('h2', get_string('custom_components_edit', 'tinymce_html_components'));
 
 $component = ($id) ? $DB->get_record('tinymce_components_custom', array('id' => $id), '*', MUST_EXIST) : null;
 $form = new custom_component_form($PAGE->url, array('component' => $component));

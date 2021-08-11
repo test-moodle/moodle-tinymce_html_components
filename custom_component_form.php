@@ -23,7 +23,7 @@ class custom_component_form extends moodleform
         $mform = $this->_form;
         $component = $this->_customdata['component'];
 
-        $preview = ($component->content) ? $component->content : get_string('custom_components_preview_msg', 'tinymce_html_components');
+        $preview = (isset($component->content)) ? $component->content : get_string('custom_components_preview_msg', 'tinymce_html_components');
 
         $mform->addElement('html', html_writer::link(new moodle_url('/lib/editor/tinymce/plugins/html_components/custom_components.php'),
             get_string('custom_components_back', 'tinymce_html_components'), array('class' => 'pull-right btn btn-secondary')));
@@ -34,9 +34,11 @@ class custom_component_form extends moodleform
         $mform->addRule('name', get_string('missingfullname'), 'required', null, 'client');
         $mform->setType('name', PARAM_TEXT);
 
-        $mform->setDefault('name', $component->name);
+        if (isset($component->name)) {
+            $mform->setDefault('name', $component->name);
+        }
         $editor = $mform->createElement('editor', 'content', get_string('custom_components_content', 'tinymce_html_components'), array('rows' => 10), array(
-            'maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => $this->context, 'subdirs' => true));
+            'maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => (isset($this->context) ? $this->context : null, 'subdirs' => true));
         if ($component) {
             $editor->setValue(array('text' => $component->content)); // Set the default value.
         }
