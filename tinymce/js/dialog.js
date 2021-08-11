@@ -135,7 +135,7 @@ var HtmlComponentsAccordion = {
     insert : function () {
         var nb_collapse = document.getElementById('collapse_nb').value;
         var collapse_class = (document.querySelector('input[name="collapse_show"]:checked') == null) ? "collapse show" : "collapse";
-        var txt = "<div class='accordion'>";
+        var txt = "<div class='accordion' id='accordionExample'>";
 
         for (var i = 1; i <= nb_collapse; i++) {
             txt += "<div class='card'>" +
