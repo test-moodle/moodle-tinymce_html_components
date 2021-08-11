@@ -45,7 +45,7 @@ if ($form->is_cancelled()) {
 } else {
     if ($datas = $form->get_data()) {
         $component = new stdClass();
-        $component->userid = $USER->id;
+        $component->user_id = $USER->id;
         $component->code = strtolower(str_replace(' ', '_', $datas->name));
         $component->name = $datas->name;
         $component->content = $datas->content['text'];

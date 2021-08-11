@@ -32,7 +32,7 @@ if ($deleteid) {
     }
 }
 
-$customs = $DB->get_records('tinymce_components_custom', array('userid' => $USER->id), 'name ASC');
+$customs = $DB->get_records('tinymce_components_custom', array('user_id' => $USER->id), 'name ASC');
 echo html_writer::link(new moodle_url('/lib/editor/tinymce/plugins/html_components/edit_custom_component.php'),
         get_string('custom_components_create', 'tinymce_html_components'), array('class' => 'btn btn-outline-info pull-right'));
 

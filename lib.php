@@ -82,7 +82,7 @@ class tinymce_html_components extends editor_tinymce_plugin {
                 <option value="NavLinks">' . get_string('nav', 'tinymce_html_components') . '</option>
             </optgroup>';
 
-        $customs = $DB->get_records('tinymce_components_custom', array('userid' => $user->id), 'name ASC');
+        $customs = $DB->get_records('tinymce_components_custom', array('user_id' => $user->id), 'name ASC');
         if ($customs) {
             $str .= '<optgroup label="' . get_string('custom_components', 'tinymce_html_components') .'">';
             foreach ($customs as $custom) {
