@@ -15,7 +15,7 @@ $preview = optional_param('preview', 1, PARAM_BOOL);
 
 $PAGE->set_context($context);
 
-$PAGE->set_pagelayout('profile');
+$PAGE->set_pagelayout('standard');
 if ($id) {
     $PAGE->set_url('/lib/editor/tinymce/plugins/html_components/edit_custom_component.php', array('id' => $id));
     $PAGE->set_title(fullname($USER));

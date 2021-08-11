@@ -83,7 +83,7 @@ var HtmlComponentsCard = {
         if (document.querySelector('input[name="card_display"]:checked').value != "horizontal") {
             document.getElementById('card_disposition_form-group').hidden = true;
         } else {
-            document.getElementById('card_disposition_form-group').hidden = (document.getElementById('nb_cards').value == 1);
+            document.getElementById('card_disposition_form-group').hidden = (document.getElementById('card_nb').value == 1);
         }
         document.getElementById('collapse_fields').hidden = true;
         document.getElementById('nav_nb_form-group').hidden = true;
