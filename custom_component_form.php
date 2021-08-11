@@ -38,7 +38,7 @@ class custom_component_form extends moodleform
             $mform->setDefault('name', $component->name);
         }
         $editor = $mform->createElement('editor', 'content', get_string('custom_components_content', 'tinymce_html_components'), array('rows' => 10), array(
-            'maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => (isset($this->context) ? $this->context : null, 'subdirs' => true));
+            'maxfiles' => EDITOR_UNLIMITED_FILES, 'noclean' => true, 'context' => (isset($this->context)) ? $this->context : null, 'subdirs' => true));
         if ($component) {
             $editor->setValue(array('text' => $component->content)); // Set the default value.
         }
