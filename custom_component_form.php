@@ -14,12 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Creation/Edition custom component form.
+ *
+ * @package tinymce_html_components
+ * @author  2021 Anthony Durif
+ * @copyright 2021 Anthony Durif, Université Clermont Auvergne
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 require_once("$CFG->libdir/formslib.php");
 
+/**
+ * Class custom_component_form
+ *
+ * @package tinymce_html_components
+ * @copyright 2021 Anthony Durif, Université Clermont Auvergne
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class custom_component_form extends moodleform
 {
-    protected function definition()
-    {
+    protected function definition() {
         $mform = $this->_form;
         $component = $this->_customdata['component'];
 
@@ -29,7 +44,7 @@ class custom_component_form extends moodleform
             get_string('custom_components_back', 'tinymce_html_components'), array('class' => 'pull-right btn btn-secondary')));
 
         $mform->addElement('header', 'creation', get_string('custom_components_construct', 'tinymce_html_components'));
-        $mform->addElement('text','name', get_string('custom_components_name', 'tinymce_html_components'));
+        $mform->addElement('text', 'name', get_string('custom_components_name', 'tinymce_html_components'));
         $mform->addHelpButton('name', 'custom_components_name', 'tinymce_html_components');
         $mform->addRule('name', get_string('missingfullname'), 'required', null, 'client');
         $mform->setType('name', PARAM_TEXT);
@@ -53,7 +68,6 @@ class custom_component_form extends moodleform
         $this->add_action_buttons(get_string('cancel'), get_string('save'));
     }
 
-    public function validation($data, $files)
-    {
+    public function validation($data, $files) {
     }
 }

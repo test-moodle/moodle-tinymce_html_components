@@ -59,6 +59,9 @@ function xmldb_tinymce_html_components_upgrade($oldversion) {
         if (!$dbman->table_exists($table->getName())) {
             $dbman->create_table($table);
         }
+
+        // Add savepoint.
+        upgrade_plugin_savepoint(true, 2021080100, 'tinymce', 'html_components');
     }
 
     return true;

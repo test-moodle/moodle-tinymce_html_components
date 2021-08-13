@@ -69,8 +69,7 @@ class tinymce_html_components extends editor_tinymce_plugin {
      * @return string
      * @throws coding_exception
      */
-    public static function getAvailableComponents($user)
-    {
+    public static function get_available_components($user) {
         global $DB;
         $str = '<option value="">' . get_string('component_placeholder', 'tinymce_html_components') . '</option>
             <optgroup label="' . get_string('basic_components', 'tinymce_html_components') .'">

@@ -18,7 +18,7 @@
             ed.addCommand('html_components', function() {
                 lang = ed.getParam('language');
                 ed.windowManager.open({
-                    file : ed.getParam("moodle_plugin_base") + 'html_components/dialog.php?lang=' + lang ,
+                    file : ed.getParam("moodle_plugin_base") + 'html_components/dialog.php?lang=' + lang,
                     width : 1500 + ed.getLang('html_components.delta_width', 0),
                     height : 800 + ed.getLang('html_components.delta_height', 0),
                     inline : 1
