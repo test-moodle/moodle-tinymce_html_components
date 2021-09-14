@@ -64,5 +64,26 @@ function xmldb_tinymce_html_components_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2021080100, 'tinymce', 'html_components');
     }
 
+    if ($oldversion < 2021091100) {
+        $dbman = $DB->get_manager();
+
+        $table = new xmldb_table('tinymce_components_custom');
+        $table->add_field('id', XMLDB_TYPE_INTEGER, 11, null, true, XMLDB_SEQUENCE, null);
+        $table->add_field('user_id', XMLDB_TYPE_INTEGER, 11, null, true, null, null);
+        $table->add_field('code', XMLDB_TYPE_TEXT, 255, null, true, null, null);
+        $table->add_field('name', XMLDB_TYPE_TEXT, 255, null, true, null, null);
+        $table->add_field('content', XMLDB_TYPE_TEXT, null, null, false, null, null);
+        $pk = new xmldb_key('primary');
+        $pk->set_attributes(XMLDB_KEY_PRIMARY, array('id'), null, null);
+        $table->addKey($pk);
+
+        if (!$dbman->table_exists($table->getName())) {
+            $dbman->create_table($table);
+        }
+
+        // Add savepoint.
+        upgrade_plugin_savepoint(true, 2021091100, 'tinymce', 'html_components');
+    }
+
     return true;
 }
