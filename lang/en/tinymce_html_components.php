@@ -92,3 +92,4 @@ $string['button_tooltip_bottom'] = 'Bottom';
 $string['button_tooltip_left'] = 'Left';
 $string['preview_legend'] = 'Preview';
 $string['preview_desc'] = 'Component preview let you visualize components which will be displayed in the page. This display can be a little different than the final render according to the theme, options, etc...';
+$string['privacy:metadata'] = 'The TinyMCE HTML Components plugin does not store any personal data.';
