@@ -1,0 +1,92 @@
+<div id="button_fields">
+            <div class="form-group row" id="button_nb_form-group">
+                <label for="button_type" class="col-sm-3 col-form-label">{{#str}}button_nb, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <input data-holder="params"  id="button_nb" name="button_nb" type="number" min="1" value="1" size="30" class="form-control"  />
+                </div>
+            </div>
+            <div class="form-group row" id="button_type_form-group">
+                <label for="button_type" class="col-sm-3 col-form-label">{{#str}}button_type, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <select data-holder="params"  id="button_type" name="button_type" class="form-control" >
+                        <option value="info">{{#str}}alert_info, tiny_html_components{{/str}}</option>
+                        <option value="warning">{{#str}}alert_warning, tiny_html_components{{/str}}</option>
+                        <option value="success">{{#str}}alert_success, tiny_html_components{{/str}}</option>
+                        <option value="danger">{{#str}}alert_danger, tiny_html_components{{/str}}</option>
+                        <option value="primary">{{#str}}alert_primary, tiny_html_components{{/str}}</option>
+                        <option value="secondary">{{#str}}alert_secondary, tiny_html_components{{/str}}</option>
+                        <option value="dark">{{#str}}alert_dark, tiny_html_components{{/str}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" id="button_style_form-group">
+                <label for="button_style" class="col-sm-3 col-form-label">{{#str}}button_style, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                        <input data-holder="params"  class="form-check-input" type="radio" name="button_style" id="button_style_full" value="full"  checked>
+                        <label class="form-check-label" for="button_style_full">{{#str}}button_style_full, tiny_html_components{{/str}}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input  data-holder="params" class="form-check-input" type="radio" name="button_style" id="button_style_outline" value="outline" >
+                        <label class="form-check-label" for="button_style_outline">{{#str}}button_style_outline, tiny_html_components{{/str}}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="button_size_form-group">
+                <label for="button_size" class="col-sm-3 col-form-label">{{#str}}button_size, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                        <input data-holder="params"  class="form-check-input" type="radio" name="button_size" id="button_size_sm" value="sm" >
+                        <label class="form-check-label" for="button_size_sm">{{#str}}button_size_sm, tiny_html_components{{/str}}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input data-holder="params"  class="form-check-input" type="radio" name="button_size" id="button_size_med" value="med"  checked>
+                        <label class="form-check-label" for="button_size_med">{{#str}}button_size_med, tiny_html_components{{/str}}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input data-holder="params"  class="form-check-input" type="radio" name="button_size" id="button_size_lg" value="lg" >
+                        <label class="form-check-label" for="button_size_lg">{{#str}}button_size_lg, tiny_html_components{{/str}}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input data-holder="params"  class="form-check-input" type="radio" name="button_size" id="button_size_block" value="block" >
+                        <label class="form-check-label" for="button_size_block">{{#str}}button_size_block, tiny_html_components{{/str}}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="button_tooltip_form-group">
+                <label for="close" class="col-sm-3 col-form-label">{{#str}}button_tooltip, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                        <input data-holder="options" data-target="button_tooltip_pos_form-group" class="form-check-input" type="radio" name="button_tooltip" id="button_tooltip_yes" value="1" >
+                        <label class="form-check-label" for="button_tooltip_yes">{{#str}}yes{{/str}}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input data-holder="options" data-target="button_tooltip_pos_form-group" class="form-check-input" type="radio" name="button_tooltip" id="button_tooltip_no" value="0"  checked>
+                        <label class="form-check-label" for="button_tooltip_no">{{#str}}no{{/str}}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row d-none" id="button_tooltip_pos_form-group">
+                <label for="button_type" class="col-sm-3 col-form-label">{{#str}}button_tooltip_pos, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <select data-holder="params"  id="button_tooltip_pos" name="button_tooltip_pos" class="form-control" >
+                        <option value="top">{{#str}}button_tooltip_top, tiny_html_components{{/str}}</option>
+                        <option value="right">{{#str}}button_tooltip_right, tiny_html_components{{/str}}</option>
+                        <option value="bottom">{{#str}}button_tooltip_bottom, tiny_html_components{{/str}}</option>
+                        <option value="left">{{#str}}button_tooltip_left, tiny_html_components{{/str}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" id="button_dropdown_form-group">
+                <span class="col-sm-3"></span>
+                <label class="form-check-label col-sm-9" style="padding-left: 40px;">
+                    <input data-holder="options" data-target ="button_dropdown_nb_form-group" class="form-check-input" type="checkbox" name="button_dropdown" > {{#str}}button_dropdown, tiny_html_components{{/str}}
+                </label>
+            </div>
+            <div class="form-group row d-none" id="button_dropdown_nb_form-group">
+                <label for="button_dropdown_nb" class="col-sm-3 col-form-label">{{#str}}button_dropdown_nb, tiny_html_components{{/str}}</label>
+                <div class="col-sm-9">
+                    <input data-holder="params" id="button_dropdown_nb" name="button_dropdown_nb" type="number" min="0" value="0" size="30" class="form-control"  />
+                </div>
+            </div>
+        </div>

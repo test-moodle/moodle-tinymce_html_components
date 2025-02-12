@@ -1,4 +1,3 @@
-<?php
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -13,17 +12,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 /**
- * Plugin for Moodle tinymce html_components.
- *
- * @package    tinymce_html_components
- * @author  2023 Anthony Durif, Gerbault Cédric
- * @copyright 2023 Anthony Durif,Gerbault Cédric Université Clermont Auvergne
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Tiny html_component Common value.
+ * @module      tiny_html_components/common
+ * @copyright   2023 Gerbault Cédric, Anthony Durif, Université Clermont Auvergne
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-defined('MOODLE_INTERNAL') || die();
-$plugin->version = 2025022701; // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires = 2022112801; // 2017111300 is Moodle 3.4.0.
-$plugin->component = 'tiny_html_components';
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v4.5';
+
+export default {
+    pluginName: 'tiny_html_components/plugin',
+    component: 'tiny_html_components',
+    buttonName: 'tiny_html_components',
+    icon: 'tiny_html_components',
+};
