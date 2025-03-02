@@ -1,6 +1,7 @@
 Tiny plugin to insert HTML components
 ==================================
-Moodle plugin which allows you to insert in the Tiny editor some html components.
+Moodle plugin which allows you to insert in the Tiny editor some html components.<br/>
+See README french verison <a href="https://github.com/andurif/moodle-tinymce_html_components/blob/main/README-fr.md">here</a>.
 
 Goals
 ------------
@@ -10,7 +11,7 @@ These components (mostly from Bootstrap) are added within the Tiny editor and cu
 Requirements
 ------------
 - Moodle 4.1 or later.
--> Tested on Moodle 4.5.
+-> Tested on Moodle 4.1 to 4.5.
 - Usage of Tiny editor
 - Usage Boost theme or a theme which extends Boost theme (use bootstrap).
 
@@ -47,10 +48,16 @@ Possible improvements
 - Integration of other components, eg icons, timelines, carousels, breadcrumps ... (some developments are in progress).
 - Add other options to facilitate the integration of components by users.
 - Personalization linked to the theme used (use the primary variable css $ for example).
-- Using Bootstrap 5.
 - Code optimization.
 <p>This is a first version of the plugin so feel free to propose some improvements and/or developments/pull requests to improve this plugin.</p>  
 
 Abous us
 ------
-<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2023.<br/>
+<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> -
+<a href="https://github.com/UCA-Squad" target="_blank">UCA Squad</a>
+
+Contributors
+------
+<a href="https://github.com/andurif" target="_blank">andurif</a> - <a href="https://github.com/Cedric-Gerbault" target="_blank">Cedric-Gerbault</a> - <a href="https://github.com/cameron1729" target="_blank">cameron1729</a> - <a href="https://github.com/SquirmDog" target="_blank">SquirmDog</a>
+
+© UCA - 2025

@@ -1,6 +1,7 @@
 Plugin Tiny d'insertion de composants HTML
 ==================================
-Plugin moodle permettant des composants html via l'éditeur Tiny.
+Plugin moodle permettant des composants html via l'éditeur Tiny.<br/>
+Voir la version anglaise du README <a href="https://github.com/andurif/moodle-tinymce_html_components/blob/main/README.md">ici</a>.
 
 Objectif
 ------------
@@ -10,7 +11,7 @@ Ces composants (principalement présent dans Bootstrap) seront ajoutés via l'é
 Pré-requis
 ------------
 - Moodle en version 4.1 ou plus récente.
--> Tests effectués sur des versions 4.1.
+-> Tests effectués sur des versions 4.1 à 4.5.
 - Utilisation de l'éditeur Tiny
 - Utilisation du thème Boost ou d'un thème qui étend le thème Boost (qui utilise bootstrap).
 
@@ -46,11 +47,17 @@ Pistes d'améliorations
 -----
 - Intégrer d'autres composants, ex: icônes, timeline, carousel, breadcrump... (certains ajouts sont en cours de développement)
 - Intégrer davantage d'options pour faciliter les ajouts par les enseignants. 
-- Personnalisation en relation avec le thème utilisé (utilisation variable $primary par exemple).  
-- Utilisation de Bootstrap 5.
+- Personnalisation en relation avec le thème utilisé (utilisation variable $primary par exemple).
 - Optimiser le code.
 <p>Ceci est la première version du plugin donc n'hésitez pas à proposer des améliorations et/ou des développements/pull pour enrichir le plugin.</p>  </p>
 
 A propos
 ------
-<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2023.<br/>
+<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 
+<a href="https://github.com/UCA-Squad" target="_blank">UCA Squad</a>
+
+Contributeurs
+------
+<a href="https://github.com/andurif" target="_blank">andurif</a> - <a href="https://github.com/Cedric-Gerbault" target="_blank">Cedric-Gerbault</a> - <a href="https://github.com/cameron1729" target="_blank">cameron1729</a> - <a href="https://github.com/SquirmDog" target="_blank">SquirmDog</a>
+
+© UCA - 2025
