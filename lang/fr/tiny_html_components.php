@@ -22,18 +22,22 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- $string['plugin'] = 'tiny_html_components';
 $string['pluginname'] = 'Tiny d\'insertion de composants HTML';
 $string['pluginname_help'] = 'Plugin permettant d\insérer des éléments html (bootstrap par exemple) via Tiny.';
-$string['html_components:desc'] = 'Insertion de composants html';
-$string['html_components:title'] = 'Insérer des composants html';
-
+$string['addhtml_components'] = 'Insertion de composants HTML';
+$string['html_components:desc'] = 'Insertion de composants HTML';
+$string['html_components:title'] = 'Insérer des composants HTML';
+$string['title'] = 'Insérer des composants HTML';
+$string['insert'] = 'Insérer le code HTML';
+$string['button_dropdown'] = 'Ajouter un menu au bouton';
+$string['button_dropdown_nb'] = 'Nombre d\'options dans le menu :';
+$string['card_disposition_info'] = 'Nombre maxi côte à côte: XL (1), L (2), M (3), S (4)';
 $string['choice_legend'] = 'Choix du composant';
 $string['component'] = 'Composant :';
 $string['component_placeholder'] = 'Choisir le composant...';
 $string['basic_components'] = 'Composants de base';
 $string['custom_components'] = 'Composants personnels';
-$string['custom_components_title'] = 'Composants Html personnalisés';
+$string['custom_components_title'] = 'Composants HTML personnalisés';
 $string['custom_components_link'] = 'Gérer vos composants personnalisés';
 $string['custom_components_construct'] = 'Construction du composant';
 $string['custom_components_create'] = 'Créer un nouveau composant personnalisé';
@@ -41,8 +45,8 @@ $string['custom_components_edit'] = 'Editer le composant';
 $string['custom_components_delete'] = 'Supprimer le composant';
 $string['custom_components_name'] = 'Nom du composant';
 $string['custom_components_name_help'] = 'Nom que vous voulez donner au composant. Ce nom apparaîtra au niveau de la liste déroulante dans le plugin disponible dans l\'édtieur.';
-$string['custom_components_content'] = 'Contenu (html) du composant';
-$string['custom_components_content_help'] = 'Contenu du composant en html que vous allez construite via l\'éditeur. C\'est ce qui sera inséré à la sélection du composant.';
+$string['custom_components_content'] = 'Contenu (HTML) du composant';
+$string['custom_components_content_help'] = 'Contenu du composant en HTML que vous allez construite via l\'éditeur. C\'est ce qui sera inséré à la sélection du composant.';
 $string['custom_components_back'] = 'Revenir à la liste des composants personnalisés';
 $string['custom_components_preview_msg'] = '<div class="alert alert-info">Aperçu disponible après validation !</div>';
 $string['alert'] = 'Alerte';

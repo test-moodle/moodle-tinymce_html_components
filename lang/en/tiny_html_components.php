@@ -22,9 +22,9 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'TinyMCE html Components Plugin';
-$string['pluginname_help'] = 'Plugin to insert some html components (bootstrap for example) through TinyMCE editor.';
-$string['addhtml_components'] = 'Insert some html components';
+$string['pluginname'] = 'TinyMCE HTML Components Plugin';
+$string['pluginname_help'] = 'Plugin to insert some HTML components (bootstrap for example) through TinyMCE editor.';
+$string['addhtml_components'] = 'Insert some HTML components';
 $string['title'] = 'Insert HTML components';
 $string['insert'] = 'Insert HTML';
 $string['suggestion'] = '';
@@ -34,9 +34,9 @@ $string['card_disposition_info'] = 'Max allowed side by side: XL (1), L (2), M (
 $string['choice_legend'] = 'Component choice';
 $string['component'] = 'Component :';
 $string['component_placeholder'] = 'Choose the component...';
-$string['basic_components'] = 'Basic components';
+$string['basic_components'] = 'Built in components';
 $string['custom_components'] = 'Own custom components';
-$string['custom_components_title'] = 'Custom Html components';
+$string['custom_components_title'] = 'Custom HTML components';
 $string['custom_components_link'] = 'Manage your custom components';
 $string['custom_components_construct'] = 'Component construction';
 $string['custom_components_create'] = 'Create a new custom component';
@@ -44,8 +44,8 @@ $string['custom_components_edit'] = 'Edit the component';
 $string['custom_components_delete'] = 'Delete the component';
 $string['custom_components_name'] = 'Component name';
 $string['custom_components_name_help'] = 'Name you want to give to the component. This name will be displayed in the components\' list available in the editor plugin.';
-$string['custom_components_content'] = 'Component content (html)';
-$string['custom_components_content_help'] = 'Content in html of the component you will construct throw the editor. That\'s will be inserted after the component selection.';
+$string['custom_components_content'] = 'Component content (HTML)';
+$string['custom_components_content_help'] = 'Content in HTML of the component you will construct throw the editor. That\'s will be inserted after the component selection.';
 $string['custom_components_back'] = 'Return to your custom components list';
 $string['custom_components_preview_msg'] = '<div class="alert alert-info">Preview available after validation !</div>';
 $string['alert'] = 'Alert';

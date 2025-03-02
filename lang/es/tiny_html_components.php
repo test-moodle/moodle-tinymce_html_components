@@ -22,18 +22,22 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['plugin'] = 'tiny_html_components';
 $string['pluginname'] = 'Componentes HTML para Tiny';
 $string['pluginname_help'] = 'Extensión para ayudar usted a agregar componentes (bootstrap por ejemplo) en el editor Tiny.';
-$string['html_components:desc'] = 'Agregar componentes html';
-$string['html_components:title'] = 'Agregar componentes html';
-
+$string['addhtml_components'] = 'Agregar componentes HTML';
+$string['html_components:desc'] = 'Agregar componentes HTML';
+$string['html_components:title'] = 'Agregar componentes HTML';
+$string['title'] = 'Agregar componentes HTML';
+$string['insert'] = 'Agregar HTML';
+$string['button_dropdown'] = 'Agregar menú al botón';
+$string['button_dropdown_nb'] = 'Número de opciones en el menú:';
+$string['card_disposition_info'] = 'Número máximo lado a lado: XL (1), L (2), M (3), S (4)';
 $string['choice_legend'] = 'Elija el componente';
 $string['component'] = 'Componente :';
 $string['component_placeholder'] = 'Elija el componente...';
 $string['basic_components'] = 'Componentes básicos';
 $string['custom_components'] = 'Componentes personalizados';
-$string['custom_components_title'] = 'Componentes Html personalizados';
+$string['custom_components_title'] = 'Componentes HTML personalizados';
 $string['custom_components_link'] = 'Administre sus componentes personalizados';
 $string['custom_components_construct'] = 'Construcción del componente';
 $string['custom_components_create'] = 'Crear un componente persoalizado';
@@ -41,8 +45,8 @@ $string['custom_components_edit'] = 'Editar el componente';
 $string['custom_components_delete'] = 'Borrar el componente';
 $string['custom_components_name'] = 'Nombre del componente';
 $string['custom_components_name_help'] = 'Nombre que desea darle al componente. Este nombre se mostrará en la lista de componentes disponible en el complemento del editor.';
-$string['custom_components_content'] = 'Contenido (html) del componente';
-$string['custom_components_content_help'] = 'Contenido en html del componente que construirás lanzando el editor. Eso se insertará después de la selección del componente.';
+$string['custom_components_content'] = 'Contenido (HTML) del componente';
+$string['custom_components_content_help'] = 'Contenido en HTML del componente que construirás lanzando el editor. Eso se insertará después de la selección del componente.';
 $string['custom_components_back'] = 'Volver a la lista de sus componentes personalizados';
 $string['custom_components_preview_msg'] = '<div class="alert alert-info">Vista previa disponible después de la validación !</div>';
 $string['alert'] = 'Alerta';

@@ -13,13 +13,13 @@
                 <select  id="component" name="component" class="form-control" data-holder = "component-selector">
                     <!-- Components list, alphabetic sort -->
                     <option value=""> {{#str}}component_placeholder, tiny_html_components{{/str}}</option>
-                    <optgroup label="Built In Components">
+                    <optgroup label="{{#str}}basic_components, tiny_html_components{{/str}}">
                         {{#selectList}}
                             <option value={{id}}>{{string}}</option>
                         {{/selectList}}
                     </optgroup>
                     {{#customGroup}}
-                        <optgroup label="Custom Components">
+                        <optgroup label="{{#str}}custom_components, tiny_html_components{{/str}}">
                             {{#customComponent}}
                                 <option value={{value}}  data-content ="{{custom-component-content}}">{{name}}</option>
                             {{/customComponent}}
