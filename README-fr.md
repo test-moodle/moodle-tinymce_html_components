@@ -1,16 +1,17 @@
-Plugin TinyMCE d'insertion de composants HTML
+Plugin Tiny d'insertion de composants HTML
 ==================================
-Plugin moodle permettant des composants html via l'éditeur TinyMCE.
+Plugin moodle permettant des composants html via l'éditeur Tiny.
 
 Objectif
 ------------
-L'objectif du plugin est de permettre d'enrichir facielement le visuel les cours et d'ajouter de l'intéractivité grâce à des composants html sans que les enseignants aient à maitriser le code html. <br/>
-Ces composants (principalement présent dans Bootstrap) seront ajoutés via l'éditeur TinyMCE et personnalisables grâce aux quelques options présentes.
+L'objectif du plugin est de permettre d'enrichir facilement le visuel des cours et d'ajouter de l'intéractivité grâce à des composants html sans que les enseignants n'aient à maitriser le code html. <br/>
+Ces composants (principalement présent dans Bootstrap) seront ajoutés via l'éditeur Tiny et personnalisables grâce aux quelques options présentes.
 
 Pré-requis
 ------------
-- Moodle en version 3.7 ou plus récente.
--> Tests effectués sur des versions 3.7 à 3.11.0(tests sur des versions précédentes par encore effectués).
+- Moodle en version 4.1 ou plus récente.
+-> Tests effectués sur des versions 4.1.
+- Utilisation de l'éditeur Tiny
 - Utilisation du thème Boost ou d'un thème qui étend le thème Boost (qui utilise bootstrap).
 
 Installation
@@ -52,4 +53,4 @@ Pistes d'améliorations
 
 A propos
 ------
-<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2021.<br/>
+<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2023.<br/>

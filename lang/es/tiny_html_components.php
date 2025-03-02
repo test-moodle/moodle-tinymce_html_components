@@ -16,14 +16,15 @@
 
 /**
  *
- * @package    tinymce_html_components
+ * @package    tiny_html_components
  * @author  2020 Anthony Durif
  * @copyright 2020 Anthony Durif, Université Clermont Auvergne
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Extensión componentes HTML para TinyMCE';
-$string['pluginname_help'] = 'Extensión para ayudar usted a agregar componentes (bootstrap por ejemplo) en el editor TinyMCE.';
+$string['plugin'] = 'tiny_html_components';
+$string['pluginname'] = 'Componentes HTML para Tiny';
+$string['pluginname_help'] = 'Extensión para ayudar usted a agregar componentes (bootstrap por ejemplo) en el editor Tiny.';
 $string['html_components:desc'] = 'Agregar componentes html';
 $string['html_components:title'] = 'Agregar componentes html';
 

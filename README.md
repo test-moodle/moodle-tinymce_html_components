@@ -1,17 +1,18 @@
-TinyMCE plugin to insert HTML components
+Tiny plugin to insert HTML components
 ==================================
-Moodle plugin which allows you to insert in the TinyMCE editor some html components.
+Moodle plugin which allows you to insert in the Tiny editor some html components.
 
 Goals
 ------------
-The main goal of the plugin is to allow course managers and teacher to improve their courses displays and add interactivity thanks to html components without coding it directly.<br/>
-These components (mostly from Bootstrap) are add with the TinyMCE editor and customizable thanks to available options.
+The main goal of the plugin is to allow course managers and teacher to improve their courses displays and interactivity thanks to html components without coding it directly.<br/>
+These components (mostly from Bootstrap) are added within the Tiny editor and customizable thanks to available options.
 
 Requirements
 ------------
-- Moodle 3.7 or later.
--> Tests on Moodle 3.7 to 3.11.0 (tests on older moodle versions not made yet).
-- Use Boost theme or a theme which extends Boost theme (use bootstrap).
+- Moodle 4.1 or later.
+-> Tested on Moodle 4.5.
+- Usage of Tiny editor
+- Usage Boost theme or a theme which extends Boost theme (use bootstrap).
 
 Installation
 ------------
@@ -35,7 +36,7 @@ For now this plugin allows you to easily add these html/bootstrap components:
 - Jumbotron
 - Navigation menu
 - Card
-<p>Be careful, for some component you will have to edit to edit html source code in editor to change display
+<p>Be careful, for some component you will have to edit html source code in editor to change display
 (Acccordion component for example to edit text or to change attributess id value if you use several to avoid conflicts).</p>
 
 In the newest version of the plugin a first integration of personalized components has been implemented.<br/>
@@ -52,4 +53,4 @@ Possible improvements
 
 Abous us
 ------
-<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2021.<br/>
+<a href="https://www.uca.fr" target="_blank">Université Clermont Auvergne</a> - 2023.<br/>
